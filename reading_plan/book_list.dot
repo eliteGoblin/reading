@@ -1,0 +1,36 @@
+digraph G {
+	//Green: finished; Pink: On 
+	//rankdir=LR;
+	Frankie [color=tomato,style=filled]
+		CPP [color=yellow,style=filled]
+		OOD [color=yellow,style=filled]
+		Linux [color=yellow,style=filled]
+		Basic [color=yellow,style=filled]
+		Casual [color=yellow,style=filled]
+	Frankie -> CPP [style=dotted];
+		cpp_book1 [label="EffectiveSTL",color=lightskyblue,style=filled]
+		cpp_book2 [label="C++ Primer",color=springgreen,style=filled]
+		STLLib [label="C++StandardLib",color=springgreen,style=filled]
+			CPP -> cpp_book1 [style=dotted];
+			CPP -> cpp_book2 [style=dotted];
+			CPP -> STLLib [style=dotted];
+			cpp_book1 -> APUE[color=red,style=bold]
+			cpp_book2 -> UNP1 [color=red,style=bold]
+	Frankie -> OOD [style=dotted];
+		HeadFirstDP [color=springgreen,style=filled]
+		OOD -> HeadFirstDP[style=dotted]
+		HeadFirstDP -> cpp_book2[color=red,style=bold]
+	Frankie -> Linux [style=dotted];
+		APUE [color=pink,style=filled]
+		UNP1 [label="UNP1",color=springgreen,style=filled]
+			Linux -> APUE [style=dotted];
+			Linux -> UNP1 [style=dotted];
+			APUE -> HeadFirstDP [color=red,style=bold]
+			UNP1 -> STLLib [color=red,style=bold]
+	Frankie -> Basic [style=dotted];
+		basic_book1 [label = "程序竞赛入门经典",color=pink,style=filled];
+		Basic -> basic_book1 [style=dotted];
+	Frankie -> Casual [style=dotted];
+		casual_1 [label="MindForNum",color=pink,style=filled];
+			Casual -> casual_1[style=dotted]
+}
