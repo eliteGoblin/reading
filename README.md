@@ -1,2 +1,7 @@
-# book_notes
-book notes in markdown
+# Reading
+
+Every book worth reading, also worth take notes: 
+
+*  Highlights
+*  Summarize
+*  Take away: how to change current thinking, habits, etc 
